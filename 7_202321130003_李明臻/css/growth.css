@@ -1,0 +1,321 @@
+/* 基础样式 - 盒模型 */
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img-baofun.zhhainiao.com/fs/3fc54f2b553dc552c23fd2df0ee0159e.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 页眉样式 - 盒模型 */
+.header {
+    background-color: rgba(1, 1, 1, 0.7);
+    color: #e7e1e1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    color: #f0ebeb;
+}
+
+.header-contact {
+    margin-top: 10px;
+    color: #4CAF50;
+}
+
+/* 内容卡片 - 盒模型 */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 个人信息卡片 - 盒模型 */
+.profile-card {
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    border: 3px solid #4CAF50;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image img, .city-image, .hobbies-image, .growth-image {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.subtitle {
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+/* 表格样式 - 盒模型 */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th, .info-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.info-table th {
+    width: 30%;
+    font-weight: bold;
+    color: #555;
+}
+
+.link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* 浮动布局 - 实现表格分栏 */
+.table-columns::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-left {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.column-right {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+/* 基本信息表格容器 */
+.info-table-container {
+    background-image: url('https://tse4-mm.cn.bing.net/th/id/OIP-C.B3-2SokqOb990N75PQ1pXQHaE5?w=268&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3');
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 表格分栏容器 */
+.table-columns {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 美食卡片样式 */
+.food-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.food-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.food-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #4CAF50;
+}
+
+.food-desc {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 旅游景点卡片样式 */
+.attraction-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.attraction-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.attraction-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #4CAF50;
+}
+
+.attraction-desc {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 爱好卡片样式 */
+.hobby-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.hobby-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.hobby-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #4CAF50;
+}
+
+.hobby-desc {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 调整爱好图片样式 */
+.hobbies-image {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* 成长经历时间线样式 */
+.timeline-container {
+    background-image: url('https://tse4-mm.cn.bing.net/th/id/OIP-C.B3-2SokqOb990N75PQ1pXQHaE5?w=268&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3');
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.timeline-item {
+    width: 30%;
+}
+
+.timeline-arrow {
+    width: 5%;
+    text-align: center;
+}
+
+.arrow-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.timeline-spacer {
+    width: 35%;
+}
+
+.timeline-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.timeline-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.timeline-title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #4CAF50;
+}
+
+.timeline-year {
+    font-size: 14px;
+    color: #777;
+}
+
+.growth-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 固定浮动卡片样式 - 定位布局 */
+.fixed-floating-card {
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    width: 250px;
+    z-index: 90;
+}
+
+.floating-card {
+    background-color: rgba(76, 175, 80, 0.95);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 页脚样式 - 盒模型 */
+.footer {
+    background-color: rgba(12, 12, 12, 0.8);
+    color: #eee9e9;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
